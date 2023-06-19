@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(204, 43%, 93%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+}
+
+.container{
+    width: 38rem;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+
+.content{
+    padding: 2rem 2rem 2rem 2rem;
+}
+p{
+    font-size: 15px;
+    color: hsl(0, 0%, 93%);
+}
+.content h2{
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1rem;
+}
+.row2{
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 0.9rem;
+    font-size: 16px;
+}
+.row3{
+    color: hsl(218, 22%, 67%);
+    margin-bottom: 0.5rem;
+}
+.plans{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.subscription{
+    background-color: hsl(179, 62%, 43%);
+    width: 20rem;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 0 0 0 10px;
+}
+.subscription h4{
+    padding-bottom: 0.6rem;
+    color: hsl(0, 0%, 93%);
+}
+.subscription span{
+    font-size: 1.5rem;
+    color: #ffff;
+    font-weight: 700;
+}
+p.price{
+    color:hsl(0, 0%, 89%);
+    padding-bottom: 0.3rem;
+    font-size: 13px;
+}
+.subscription button{
+    background-color: hsl(71, 73%, 54%);
+    color: #ffff;
+    border: none;    
+    border-radius: 5px;
+    padding: 0.8rem;
+    width: 78%;
+    margin-top: 1.5rem;
+}
+.subscription button p{
+    color: #ffff;
+    font-size: 13px;
+    font-weight: 400;
+}
+.about{
+    background-color: #4ABEBD;
+    width: 20rem;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 0 0 10px 0;
+}
+.about h4{
+    padding-bottom: 0.8rem;
+    color: hsl(0, 0%, 93%);
+}
+.about ul{
+    list-style: none;
+    color: hsl(210, 3%, 87%);
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1rem;
+}
+
+@media only screen and (max-width:32rem){
+    
+    .container{
+        height: 722px;
+        width: 335px;
+        
+    }
+    .content{
+        padding: 6rem 1rem 1.5rem 2rem;
+    }
+    .row3{
+        line-height: 1.5rem;
+    }
+    .plans{
+        display: flex;
+        flex-direction: column;
+        height: 455px;
+    }
+    .subscription{
+        border-radius: 0;
+        width: 335px;
+    }
+    .subscription button{
+        width: 98%;
+    }
+    .about{
+        border-radius: 0 0 10px 10px; 
+        width: 335px;
+    }
+}
